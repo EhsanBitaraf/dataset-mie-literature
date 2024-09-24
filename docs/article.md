@@ -7,14 +7,14 @@ The Medical Informatics Europe (MIE) Conference, a cornerstone event in the fiel
 
 In response to this need, we present a novel dataset derived from the MIE Conference proceedings, processed using advanced techniques such as topic extraction and affiliation mining. This dataset not only exemplifies the power of open-source data in driving scientific progress but also demonstrates the potential of intelligent tools in managing and analyzing vast amounts of scientific information.
 
-The importance of open-source datasets in the AI ecosystem cannot be overstated. By making datasets freely available to the research community, we foster collaboration, encourage reproducibility, and accelerate the pace of innovation [4]. Open-source datasets democratize access to valuable information, enabling researchers from diverse backgrounds to contribute to the advancement of AI and its applications in fields like medical informatics.
+By making datasets freely available to the research community, we foster collaboration, encourage reproducibility, and accelerate the pace of innovation [4]. Open-source datasets democratize access to valuable information, enabling researchers from diverse backgrounds to contribute to the advancement of AI and its applications in fields like medical informatics.
 
 Furthermore, the application of smart tools for analyzing scientific articles across various disciplines has become increasingly crucial. As the volume of published research continues to grow exponentially, traditional manual methods of literature review and synthesis become increasingly untenable [5]. Advanced techniques such as natural language processing, machine learning, and data mining offer powerful means to extract key insights, identify patterns, and uncover hidden relationships within large corpora of scientific literature [6].
 
-This article presents a comprehensive overview of our dataset preparation process, detailing the methodologies employed in topic extraction and affiliation mining. By providing this dataset and elucidating our approach, we aim to contribute to the broader scientific community's efforts in leveraging AI for knowledge discovery and synthesis in the field of medical informatics.
+This paper presents a comprehensive overview of our dataset preparation process, detailing the methodologies employed in topic extraction and affiliation mining. By providing this dataset and elaborating our approach, we aim to contribute to the broader scientific community's efforts in leveraging AI for knowledge discovery and synthesis in the field of medical informatics.
 
 #### Related Work
-In the realm of data-driven research, several notable datasets have significantly contributed to advancing various scientific fields. This section highlights key datasets that have set benchmarks in their respective domains, providing a context for the novel dataset approach used in "Decoding MIE: A Novel Dataset Approach Using Topic Extraction and Affiliation Mining."
+In the realm of data-driven research, several notable datasets have significantly contributed to advancing various scientific fields. This section highlights key datasets that have set benchmarks in their respective domains, providing a context for the novel dataset approach used in our study.
 
 ##### CORD-19
 
@@ -34,7 +34,7 @@ The TaeC dataset is a manually annotated text dataset designed for trait and phe
 
 ##### MPI-LIT
 
-MPI-LIT is a literature-curated dataset of microbial binary protein-protein interactions. This dataset is essential for researchers studying microbial interactions, as it provides curated information on protein interactions, which is critical for understanding microbial functions and developing new biotechnological applications.
+MPI-LIT is a literature-curated dataset of microbial binary protein-protein interactions. This dataset is beneficial for researchers studying microbial interactions, as it provides curated information on protein interactions, which is critical for understanding microbial functions and developing new biotechnological applications.
 
 ##### Bibliographic Dataset for Space Weather Research
 
@@ -46,7 +46,7 @@ These datasets exemplify the diverse applications and significant impact of well
 
 #### Methodology
 
-In this study, we employed a structured and multi-stage approach to collect, process, and prepare a comprehensive dataset of articles from the Medical Informatics Europe (MIE) Conference. The primary tool used for this process was the Triple-A software, which facilitated data retrieval and preprocessing. This section outlines the various steps involved in constructing the dataset, including metadata acquisition, affiliation mining, and topic extraction.
+In this study, we employed a structured and multi-stage approach to collect, process, and prepare a comprehensive dataset of articles from the Medical Informatics Europe (MIE) Conference. The primary tool used for this process was the Triple-A software [], which facilitated data retrieval and preprocessing. This section outlines the various steps involved in constructing the dataset, including metadata acquisition, affiliation mining, and topic extraction.
 
 ##### Data Acquisition
 
@@ -87,7 +87,7 @@ The final dataset was prepared in multiple formats to maximize usability and acc
 The Medical Informatics Europe (MIE) Conference dataset presented in this article offers significant value to researchers, practitioners, and policymakers in the field of medical informatics. The following points highlight the key benefits and potential applications of this dataset:
 
 1. **Longitudinal Analysis of Medical Informatics Trends**:
-   - The dataset, covering MIE conferences from 1994 onwards, enables researchers to track the evolution of medical informatics over three decades.
+   - The dataset, covering MIE conferences from 1997 onwards, enables researchers to track the evolution of medical informatics over three decades.
    - Temporal analysis can reveal shifting focus areas, emerging topics, and the lifecycle of various subfields within medical informatics.
 
 2. **Topic Modeling and Content Analysis**:
@@ -320,3 +320,10 @@ The current work does not involve human subjects, animal experiments, or any dat
 #### Acknowledgments
 
 #### Data Availability
+
+
+# Notes
+
+as we got depper through the analysis of the dataset, we realized that although some articles didn't have DOI in pubmed, but they were associated with a DOI in IOSPress website. But the issue if that there is no systematic way to access such metadata from IOSPress. (for example check this PMID:  25160183)
+
+
