@@ -1,0 +1,428 @@
+{
+    "Abstract": "New documentation and messages conforming to the rules of EDIFACT are created and an attempt is made to follow internationally standardised and wordwide available commercial experience. A set of medical documents, aligned with United Nations Layout Key for trade documents is designed. The approach is to develop a set of paper documents and to standardise the data which are filled in these documents. There is a possibility to fill the data directly in medical documents and to print them from the Clinical Information System in our University Hospital.",
+    "AffiliationIntegration": [
+        {
+            "ParseMethod": 2,
+            "Structural": [
+                {
+                    "country": ""
+                },
+                {
+                    "department": ""
+                },
+                {
+                    "email": ""
+                },
+                {
+                    "institution": "University Hospital of Endocrinology and Gerontology"
+                },
+                {
+                    "location": "Sofia, Bulgaria"
+                },
+                {
+                    "zipcode": ""
+                }
+            ],
+            "Text": "University Hospital of Endocrinology and Gerontology, Sofia, Bulgaria."
+        }
+    ],
+    "ArxivID": null,
+    "Authors": [
+        {
+            "Affiliations": [
+                {
+                    "Has_Extra": false,
+                    "HashID": "4355394078729932921",
+                    "ParseMethod": null,
+                    "Part1": "University Hospital of Endocrinology and Gerontology",
+                    "Part2": "Sofia",
+                    "Part3": "Bulgaria.",
+                    "Part4": null,
+                    "Part5": null,
+                    "Part6": null,
+                    "Structural": null,
+                    "Text": "University Hospital of Endocrinology and Gerontology, Sofia, Bulgaria."
+                }
+            ],
+            "ForeName": "D",
+            "FullName": "D Tcharaktchiev",
+            "HashID": "7701709371102415647",
+            "LastName": "Tcharaktchiev",
+            "ORCID": null
+        },
+        {
+            "Affiliations": null,
+            "ForeName": "B",
+            "FullName": "B Georgiev",
+            "HashID": "-2222608016279548451",
+            "LastName": "Georgiev",
+            "ORCID": null
+        },
+        {
+            "Affiliations": null,
+            "ForeName": "P",
+            "FullName": "P Tzonov",
+            "HashID": "5745423245444187358",
+            "LastName": "Tzonov",
+            "ORCID": null
+        },
+        {
+            "Affiliations": null,
+            "ForeName": "A",
+            "FullName": "A Dimitrov",
+            "HashID": "5684743606261810694",
+            "LastName": "Dimitrov",
+            "ORCID": null
+        },
+        {
+            "Affiliations": null,
+            "ForeName": "G",
+            "FullName": "G Dimov",
+            "HashID": "-5833429553394870513",
+            "LastName": "Dimov",
+            "ORCID": null
+        },
+        {
+            "Affiliations": null,
+            "ForeName": "V",
+            "FullName": "V Kirov",
+            "HashID": "3087691463406441531",
+            "LastName": "Kirov",
+            "ORCID": null
+        },
+        {
+            "Affiliations": null,
+            "ForeName": "A",
+            "FullName": "A Shinkov",
+            "HashID": "6636259760931609016",
+            "LastName": "Shinkov",
+            "ORCID": null
+        }
+    ],
+    "CiteCrawlerDeep": 1,
+    "CitedBy": null,
+    "DOI": null,
+    "FlagAffiliationMining": 1,
+    "FlagEmbedding": 0,
+    "FlagExtractKG": 0,
+    "FlagExtractTopic": 1,
+    "FlagShortReviewByLLM": 0,
+    "FullTextMetadata": null,
+    "InsertType": null,
+    "Journal": "Studies in health technology and informatics",
+    "Keywords": [
+        {
+            "IS_Major": false,
+            "IS_Mesh": true,
+            "Text": "Bulgaria"
+        },
+        {
+            "IS_Major": false,
+            "IS_Mesh": true,
+            "Text": "Documentation"
+        },
+        {
+            "IS_Major": false,
+            "IS_Mesh": true,
+            "Text": "Forms and Records Control"
+        },
+        {
+            "IS_Major": false,
+            "IS_Mesh": true,
+            "Text": "Humans"
+        },
+        {
+            "IS_Major": true,
+            "IS_Mesh": true,
+            "Text": "Information Systems"
+        },
+        {
+            "IS_Major": true,
+            "IS_Mesh": true,
+            "Text": "International Cooperation"
+        },
+        {
+            "IS_Major": true,
+            "IS_Mesh": true,
+            "Text": "Reference Standards"
+        },
+        {
+            "IS_Major": false,
+            "IS_Mesh": true,
+            "Text": "United Nations"
+        }
+    ],
+    "NamedEntities": null,
+    "OreginalArticle": {
+        "PubmedArticleSet": {
+            "PubmedArticle": {
+                "MedlineCitation": {
+                    "@Owner": "NLM",
+                    "@Status": "MEDLINE",
+                    "Article": {
+                        "@PubModel": "Print",
+                        "Abstract": {
+                            "AbstractText": "New documentation and messages conforming to the rules of EDIFACT are created and an attempt is made to follow internationally standardised and wordwide available commercial experience. A set of medical documents, aligned with United Nations Layout Key for trade documents is designed. The approach is to develop a set of paper documents and to standardise the data which are filled in these documents. There is a possibility to fill the data directly in medical documents and to print them from the Clinical Information System in our University Hospital."
+                        },
+                        "ArticleTitle": "UN/EDIFACT based medical documentation and messages.",
+                        "AuthorList": {
+                            "@CompleteYN": "Y",
+                            "Author": [
+                                {
+                                    "@ValidYN": "Y",
+                                    "AffiliationInfo": {
+                                        "Affiliation": "University Hospital of Endocrinology and Gerontology, Sofia, Bulgaria."
+                                    },
+                                    "ForeName": "D",
+                                    "Initials": "D",
+                                    "LastName": "Tcharaktchiev"
+                                },
+                                {
+                                    "@ValidYN": "Y",
+                                    "ForeName": "B",
+                                    "Initials": "B",
+                                    "LastName": "Georgiev"
+                                },
+                                {
+                                    "@ValidYN": "Y",
+                                    "ForeName": "P",
+                                    "Initials": "P",
+                                    "LastName": "Tzonov"
+                                },
+                                {
+                                    "@ValidYN": "Y",
+                                    "ForeName": "A",
+                                    "Initials": "A",
+                                    "LastName": "Dimitrov"
+                                },
+                                {
+                                    "@ValidYN": "Y",
+                                    "ForeName": "G",
+                                    "Initials": "G",
+                                    "LastName": "Dimov"
+                                },
+                                {
+                                    "@ValidYN": "Y",
+                                    "ForeName": "V",
+                                    "Initials": "V",
+                                    "LastName": "Kirov"
+                                },
+                                {
+                                    "@ValidYN": "Y",
+                                    "ForeName": "A",
+                                    "Initials": "A",
+                                    "LastName": "Shinkov"
+                                }
+                            ]
+                        },
+                        "Journal": {
+                            "ISOAbbreviation": "Stud Health Technol Inform",
+                            "ISSN": {
+                                "#text": "0926-9630",
+                                "@IssnType": "Print"
+                            },
+                            "JournalIssue": {
+                                "@CitedMedium": "Print",
+                                "PubDate": {
+                                    "Year": "1997"
+                                },
+                                "Volume": "43 Pt A"
+                            },
+                            "Title": "Studies in health technology and informatics"
+                        },
+                        "Language": "eng",
+                        "Pagination": {
+                            "EndPage": "118",
+                            "MedlinePgn": "114-8",
+                            "StartPage": "114"
+                        },
+                        "PublicationTypeList": {
+                            "PublicationType": {
+                                "#text": "Journal Article",
+                                "@UI": "D016428"
+                            }
+                        }
+                    },
+                    "DateCompleted": {
+                        "Day": "24",
+                        "Month": "06",
+                        "Year": "1998"
+                    },
+                    "DateRevised": {
+                        "Day": "17",
+                        "Month": "11",
+                        "Year": "2004"
+                    },
+                    "MedlineJournalInfo": {
+                        "Country": "Netherlands",
+                        "ISSNLinking": "0926-9630",
+                        "MedlineTA": "Stud Health Technol Inform",
+                        "NlmUniqueID": "9214582"
+                    },
+                    "MeshHeadingList": {
+                        "MeshHeading": [
+                            {
+                                "DescriptorName": {
+                                    "#text": "Bulgaria",
+                                    "@MajorTopicYN": "N",
+                                    "@Type": "Geographic",
+                                    "@UI": "D002031"
+                                }
+                            },
+                            {
+                                "DescriptorName": {
+                                    "#text": "Documentation",
+                                    "@MajorTopicYN": "N",
+                                    "@UI": "D004282"
+                                },
+                                "QualifierName": {
+                                    "#text": "methods",
+                                    "@MajorTopicYN": "Y",
+                                    "@UI": "Q000379"
+                                }
+                            },
+                            {
+                                "DescriptorName": {
+                                    "#text": "Forms and Records Control",
+                                    "@MajorTopicYN": "N",
+                                    "@UI": "D005568"
+                                },
+                                "QualifierName": {
+                                    "#text": "methods",
+                                    "@MajorTopicYN": "Y",
+                                    "@UI": "Q000379"
+                                }
+                            },
+                            {
+                                "DescriptorName": {
+                                    "#text": "Humans",
+                                    "@MajorTopicYN": "N",
+                                    "@UI": "D006801"
+                                }
+                            },
+                            {
+                                "DescriptorName": {
+                                    "#text": "Information Systems",
+                                    "@MajorTopicYN": "Y",
+                                    "@UI": "D007256"
+                                }
+                            },
+                            {
+                                "DescriptorName": {
+                                    "#text": "International Cooperation",
+                                    "@MajorTopicYN": "Y",
+                                    "@UI": "D007391"
+                                }
+                            },
+                            {
+                                "DescriptorName": {
+                                    "#text": "Reference Standards",
+                                    "@MajorTopicYN": "Y",
+                                    "@UI": "D012015"
+                                }
+                            },
+                            {
+                                "DescriptorName": {
+                                    "#text": "United Nations",
+                                    "@MajorTopicYN": "N",
+                                    "@UI": "D014480"
+                                }
+                            }
+                        ]
+                    },
+                    "PMID": {
+                        "#text": "10179518",
+                        "@Version": "1"
+                    }
+                },
+                "PubmedData": {
+                    "ArticleIdList": {
+                        "ArticleId": {
+                            "#text": "10179518",
+                            "@IdType": "pubmed"
+                        }
+                    },
+                    "History": {
+                        "PubMedPubDate": [
+                            {
+                                "@PubStatus": "pubmed",
+                                "Day": "8",
+                                "Month": "12",
+                                "Year": "1996"
+                            },
+                            {
+                                "@PubStatus": "medline",
+                                "Day": "8",
+                                "Hour": "0",
+                                "Minute": "1",
+                                "Month": "12",
+                                "Year": "1996"
+                            },
+                            {
+                                "@PubStatus": "entrez",
+                                "Day": "8",
+                                "Hour": "0",
+                                "Minute": "0",
+                                "Month": "12",
+                                "Year": "1996"
+                            }
+                        ]
+                    },
+                    "PublicationStatus": "ppublish"
+                }
+            }
+        }
+    },
+    "PMC": null,
+    "PMID": "10179518",
+    "Published": null,
+    "QueryTranslation": "\"Stud Health Technol Inform\"[Journal] AND 1991/01/01:2010/01/01[Date - Publication]",
+    "ReferenceCrawlerDeep": 0,
+    "References": null,
+    "ReviewLLM": null,
+    "SourceBank": 1,
+    "State": 3,
+    "Title": "UN/EDIFACT based medical documentation and messages.",
+    "Topics": [
+        {
+            "rank": 0.15374571391407238,
+            "text": "medical documents"
+        },
+        {
+            "rank": 0.15254242101941673,
+            "text": "trade documents"
+        },
+        {
+            "rank": 0.14085252605012158,
+            "text": "paper documents"
+        },
+        {
+            "rank": 0.13562444658661885,
+            "text": "University Hospital"
+        },
+        {
+            "rank": 0.12390483024770604,
+            "text": "United Nations Layout Key"
+        },
+        {
+            "rank": 0.08375512146859514,
+            "text": "internationally standardised and wordwide available commercial experience"
+        },
+        {
+            "rank": 0.07726314295637912,
+            "text": "EDIFACT"
+        },
+        {
+            "rank": 0.07369450354554419,
+            "text": "messages"
+        },
+        {
+            "rank": 0.07216323007115757,
+            "text": "New documentation"
+        },
+        {
+            "rank": 0.07192572440705318,
+            "text": "our University Hospital"
+        }
+    ]
+}
