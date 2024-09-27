@@ -11,18 +11,18 @@ By making datasets freely available to the research community, we foster collabo
 
 Furthermore, the application of smart tools for analyzing scientific articles across various disciplines has become increasingly crucial. As the volume of published research continues to grow exponentially, traditional manual methods of literature review and synthesis become increasingly untenable [5]. Advanced techniques such as natural language processing, machine learning, and data mining offer powerful means to extract key insights, identify patterns, and uncover hidden relationships within large corpora of scientific literature [6].
 
-This paper presents a comprehensive overview of our dataset preparation process, detailing the methodologies employed in topic extraction and affiliation mining. By providing this dataset and elaborating our approach, we aim to contribute to the broader scientific community's efforts in leveraging AI for knowledge discovery and synthesis in the field of medical informatics.
+This paper presents a comprehensive overview of our dataset preparation process. It details the methodologies employed in topic extraction and affiliation mining. By providing this dataset and elaborating our approach, we aim to contribute to the broader scientific community's efforts in leveraging AI for knowledge discovery and synthesis in the field of medical informatics.
 
 #### Related Work
 In the realm of data-driven research, several notable datasets have significantly contributed to advancing various scientific fields. This section highlights key datasets that have set benchmarks in their respective domains, providing a context for the novel dataset approach used in our study.
 
 ##### CORD-19
 
-The COVID-19 Open Research Dataset (CORD-19) is a comprehensive collection of over 200,000 research papers on COVID-19, curated by the Allen Institute for AI. This dataset has been instrumental in facilitating rapid scientific discovery and understanding of the COVID-19 pandemic by providing researchers with a rich repository of scholarly articles for text mining and data analysis. The extensive use of CORD-19 underscores the importance of well-curated datasets in addressing global health crises.
+The COVID-19 Open Research Dataset (CORD-19) is a comprehensive collection of over 200,000 research papers on COVID-19 curated by the Allen Institute for AI. This dataset has been instrumental in facilitating rapid scientific discovery and understanding of the COVID-19 pandemic by providing researchers with a rich repository of scholarly articles for text mining and data analysis. The extensive use of CORD-19 underscores the importance of well-curated datasets in addressing global health crises.
 
 ##### S2ORC (Semantic Scholar Open Research Corpus)
 
-S2ORC is another significant dataset, encompassing a vast collection of research papers across various scientific disciplines. This open research corpus is designed to support large-scale text mining and natural language processing (NLP) tasks, enabling researchers to explore and analyze scientific literature comprehensively. S2ORC's broad scope and accessibility make it a valuable resource for advancing scientific research and innovation.
+S2ORC is another significant dataset, consisting of a vast collection of research papers across various scientific disciplines. This open research corpus is designed to support large-scale text mining and natural language processing (NLP) tasks, enabling researchers to explore and analyze scientific literature comprehensively. S2ORC's broad scope and accessibility make it a valuable resource for advancing scientific research and innovation.
 
 ##### ScisummNet
 
@@ -77,7 +77,9 @@ The final dataset was prepared in multiple formats to maximize usability and acc
 
 
 
+#### Results & Discussion
 
+Using this approach we extracted ... papers leading to ... metadata, ... affiliations, and ... topics. As we delved deeper into the dataset analysis, we observed that while certain articles lacked a DOI on PubMed, they were associated with a DOI on the IOS Press website. However, a significant challenge lies in the absence of a systematic approach to access this metadata from IOS Press. For instance, consider PMID: 25160183.
 
 
 
@@ -138,6 +140,8 @@ This dataset represents a valuable resource for the medical informatics communit
 
 #### Dataset Description
 The dataset described in this article comprises a single JSON file containing detailed information about articles presented at the Medical Informatics Europe (MIE) Conference. This dataset was collected using the Triple-A tool and further enhanced through advanced techniques such as topic extraction and affiliation mining.
+
+
 
 ##### File Structure
 
@@ -321,9 +325,5 @@ The current work does not involve human subjects, animal experiments, or any dat
 
 #### Data Availability
 
-
-# Notes
-
-as we got depper through the analysis of the dataset, we realized that although some articles didn't have DOI in pubmed, but they were associated with a DOI in IOSPress website. But the issue if that there is no systematic way to access such metadata from IOSPress. (for example check this PMID:  25160183)
 
 
