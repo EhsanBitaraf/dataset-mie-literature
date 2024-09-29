@@ -1,60 +1,91 @@
-### Decoding MIE: A Novel Dataset Approach Using Topic Extraction and Affiliation Mining
+ Decoding MIE: A Novel Dataset Approach Using Topic Extraction and Affiliation Mining
 
-#### Introduction
-In the rapidly evolving landscape of artificial intelligence (AI), the role of high-quality, diverse datasets cannot be overstated. These datasets serve as the foundation upon which AI models are built, trained, and refined, ultimately shaping the capabilities and performance of AI systems across various domains [1]. The medical field, in particular, stands to benefit immensely from the application of AI, with potential improvements in diagnosis, treatment planning, and healthcare management [2].
+# Introduction
+In the rapidly evolving landscape of artificial intelligence (AI), the role of high-quality, diverse datasets cannot be overstated. These datasets serve as the foundation upon which AI models are built, trained, and refined, ultimately shaping the capabilities and performance of AI systems across various domains [1](https://dl.acm.org/doi/10.1145/3461702.3462590)[2](https://www.mdpi.com/2076-3417/13/12/7082). The medical field, in particular, stands to benefit immensely from the application of AI, with potential improvements in diagnosis, treatment planning, and healthcare management [1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8285156/).
 
-The Medical Informatics Europe (MIE) Conference, a cornerstone event in the field of medical informatics, generates a wealth of valuable scientific content annually. However, the sheer volume of articles presented at such conferences poses a significant challenge for researchers and practitioners attempting to extract meaningful insights and identify emerging trends. This challenge underscores the need for sophisticated tools and methodologies to analyze and synthesize large volumes of scientific literature effectively [3].
+The Medical Informatics Europe (MIE) Conference, a cornerstone event in the field of medical informatics, generates a wealth of valuable scientific content annually. However, the sheer volume of articles presented at such conferences poses a significant challenge for researchers and practitioners attempting to extract meaningful insights and identify emerging trends [1](https://pubmed.ncbi.nlm.nih.gov/34584329/). This challenge underscores the need for sophisticated tools and methodologies to analyze and synthesize large volumes of scientific literature effectively [1](https://www.nature.com/articles/nj7612-457a).
 
 In response to this need, we present a novel dataset derived from the MIE Conference proceedings, processed using advanced techniques such as topic extraction and affiliation mining. This dataset not only exemplifies the power of open-source data in driving scientific progress but also demonstrates the potential of intelligent tools in managing and analyzing vast amounts of scientific information.
 
-By making datasets freely available to the research community, we foster collaboration, encourage reproducibility, and accelerate the pace of innovation [4]. Open-source datasets democratize access to valuable information, enabling researchers from diverse backgrounds to contribute to the advancement of AI and its applications in fields like medical informatics.
+By making datasets freely available to the research community, we foster collaboration, encourage reproducibility, and accelerate the pace of innovation [1](https://pubmed.ncbi.nlm.nih.gov/21738610/). Open-source datasets democratize access to valuable information, enabling researchers from diverse backgrounds to contribute to the advancement of AI and its applications in fields like medical informatics [1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9715297/).
 
-Furthermore, the application of smart tools for analyzing scientific articles across various disciplines has become increasingly crucial. As the volume of published research continues to grow exponentially, traditional manual methods of literature review and synthesis become increasingly untenable [5]. Advanced techniques such as natural language processing, machine learning, and data mining offer powerful means to extract key insights, identify patterns, and uncover hidden relationships within large corpora of scientific literature [6].
+Furthermore, the application of smart tools for analyzing scientific articles across various disciplines has become increasingly crucial. As the volume of published research continues to grow exponentially, traditional manual methods of literature review and synthesis become increasingly untenable [1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10335470/). Advanced techniques such as natural language processing, machine learning, and data mining offer powerful means to extract key insights, identify patterns, and uncover hidden relationships within large corpora of scientific literature [1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10335470/).
 
 This paper presents a comprehensive overview of our dataset preparation process. It details the methodologies employed in topic extraction and affiliation mining. By providing this dataset and elaborating our approach, we aim to contribute to the broader scientific community's efforts in leveraging AI for knowledge discovery and synthesis in the field of medical informatics.
 
-#### Related Work
+# Related Work
 In the realm of data-driven research, several notable datasets have significantly contributed to advancing various scientific fields. This section highlights key datasets that have set benchmarks in their respective domains, providing a context for the novel dataset approach used in our study.
 
-##### CORD-19
+## CORD-19
 
-The COVID-19 Open Research Dataset (CORD-19) is a comprehensive collection of over 200,000 research papers on COVID-19 curated by the Allen Institute for AI. This dataset has been instrumental in facilitating rapid scientific discovery and understanding of the COVID-19 pandemic by providing researchers with a rich repository of scholarly articles for text mining and data analysis. The extensive use of CORD-19 underscores the importance of well-curated datasets in addressing global health crises.
+The COVID-19 Open Research Dataset (CORD-19) is a comprehensive collection of over 200,000 research papers on COVID-19 curated by the Allen Institute for AI. This dataset has been instrumental in facilitating rapid scientific discovery and understanding of the COVID-19 pandemic by providing researchers with a rich repository of scholarly articles for text mining and data analysis. The extensive use of CORD-19 underscores the importance of well-curated datasets in addressing global health crises [1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7251955/).
 
-##### S2ORC (Semantic Scholar Open Research Corpus)
+## S2ORC (Semantic Scholar Open Research Corpus)
 
-S2ORC is another significant dataset, consisting of a vast collection of research papers across various scientific disciplines. This open research corpus is designed to support large-scale text mining and natural language processing (NLP) tasks, enabling researchers to explore and analyze scientific literature comprehensively. S2ORC's broad scope and accessibility make it a valuable resource for advancing scientific research and innovation.
+S2ORC is another significant dataset, consisting of a vast collection of research papers across various scientific disciplines. This open research corpus is designed to support large-scale text mining and natural language processing (NLP) tasks, enabling researchers to explore and analyze scientific literature comprehensively. S2ORC's broad scope and accessibility make it a valuable resource for advancing scientific research and innovation [1](https://aclanthology.org/2020.acl-main.447/).
 
-##### ScisummNet
+## ScisummNet
 
-ScisummNet is a specialized dataset focused on summarizing scientific papers. It provides annotated summaries of research articles, which are crucial for developing and evaluating automatic summarization algorithms. By offering a structured approach to summarizing scientific literature, ScisummNet aids in enhancing the efficiency and accuracy of information retrieval in academic research.
+ScisummNet is a specialized dataset focused on summarizing scientific papers. It provides annotated summaries of research articles, which are crucial for developing and evaluating automatic summarization algorithms. By offering a structured approach to summarizing scientific literature, ScisummNet aids in enhancing the efficiency and accuracy of information retrieval in academic research [1](https://arxiv.org/pdf/1909.01716).
 
-##### TaeC
+## TaeC
 
-The TaeC dataset is a manually annotated text dataset designed for trait and phenotype extraction and entity linking in wheat breeding literature. This dataset supports the agricultural research community by providing detailed annotations that facilitate the extraction of valuable information related to wheat traits and phenotypes, thereby advancing the field of plant breeding and genetics.
+The TaeC dataset is a manually annotated text dataset designed for trait and phenotype extraction and entity linking in wheat breeding literature. This dataset supports the agricultural research community by providing detailed annotations that facilitate the extraction of valuable information related to wheat traits and phenotypes, thereby advancing the field of plant breeding and genetics [1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11175518/).
 
-##### MPI-LIT
+## MPI-LIT
 
-MPI-LIT is a literature-curated dataset of microbial binary protein-protein interactions. This dataset is beneficial for researchers studying microbial interactions, as it provides curated information on protein interactions, which is critical for understanding microbial functions and developing new biotechnological applications.
-
-##### Bibliographic Dataset for Space Weather Research
-
-This bibliographic dataset is curated to analyze global trends and progress in the machine learning paradigm within space weather research. By compiling literature on the application of machine learning to space weather, this dataset helps researchers track advancements, identify emerging trends, and foster collaboration in this interdisciplinary field.
-
-These datasets exemplify the diverse applications and significant impact of well-curated data in various scientific domains. The novel dataset approach used in "Decoding MIE" builds on these foundations, employing advanced techniques such as topic extraction and affiliation mining to enhance the utility and accessibility of conference data in the field of medical informatics.
+MPI-LIT is a literature-curated dataset of microbial binary protein-protein interactions. This dataset is beneficial for researchers studying microbial interactions, as it provides curated information on protein interactions, which is critical for understanding microbial functions and developing new biotechnological applications [1](https://pubmed.ncbi.nlm.nih.gov/18786976/).
 
 
 
-#### Methodology
 
-In this study, we employed a structured and multi-stage approach to collect, process, and prepare a comprehensive dataset of articles from the Medical Informatics Europe (MIE) Conference. The primary tool used for this process was the Triple-A software [], which facilitated data retrieval and preprocessing. This section outlines the various steps involved in constructing the dataset, including metadata acquisition, affiliation mining, and topic extraction.
+# Methodology
 
-##### Data Acquisition
+In this study, we employed a structured and multi-stage approach to collect, process, and prepare a comprehensive dataset of articles from the Medical Informatics Europe (MIE) Conference. The primary tool used for this process was the Triple-A software [1](https://ieeexplore.ieee.org/document/10139229), which facilitated data retrieval and preprocessing. This section outlines the various steps involved in constructing the dataset, including metadata acquisition, affiliation mining, and topic extraction.
+
+## Data Acquisition
 
 We began by sourcing the metadata for the articles from the PubMed database, utilizing the Triple-A tool to streamline the extraction process. Our initial query targeted all publications within the journal series "Studies in Health Technology and Informatics" (Stud Health Technol Inform), which regularly publishes MIE conference proceedings. This ensured we captured a wide range of articles, from which we could later refine the dataset. 
 
 To focus specifically on MIE conference papers, we filtered out irrelevant volumes that did not correspond to MIE-related events. This step ensured that the dataset was centered around contributions presented at the MIE Conference, maintaining a consistent scope for further analysis.
 
-##### Affiliation Mining
+
+| Tag | Volume | Published Year | Place |
+| --- | --- | --- | --- |
+| MIE2023 | 302 | 2023 | Gothenburg, Sweden |
+| MIE2022 | 294 | 2022 | Nice, France |
+| MIE2021 | 281 | 2021 | Athens, Greece (e-Conference) |
+| MIE2020 | 270 | 2020 | Geneva, Switzerland |
+| MIE2018 | 247 | 2018 | Gothenburg, Sweden |
+| MIE2017 | 235 | 2017 | Manchester, UK |
+| MIE2016 | 228 | 2016 | (@HEC2016) – Munich, Germany |
+| MIE2015 | 210 | 2015 | Madrid, Spain |
+| MIE2014 | 205 | 2014 | Istanbul, Turkey |
+| MIE2012 | 180 | 2012 | Pisa, Italy |
+| MIE2011 | 169 | 2011 | Oslo, Norway |
+| MIE2009 | 150 | 2009 | Sarajevo, Bosnia-Herzegovina |
+| MIE2008 | 136 | 2008 | Gothenburg, Sweden |
+| MIE2006 | 124 | 2006 | Maastricht, Netherlands |
+| MIE2005 | 116 | 2005 | Geneva, Switzerland |
+| MIE2003 | 95  | 2003 | Sant Malo, France |
+| MIE2002 | 90  | 2002 | Budapest, Hungary |
+| MIE2000 | 77  | 2000 | Hanover, Germany |
+| MIE1999 | 68  | 1999 | Ljubljana, Slovenia |
+| MIE1997 | 43  | 1997 | Thessaloniki, Greece |
+| MIE1996 | 34  | 1996 | Copenhagen, Denmark |
+
+
+## Affiliation Mining
+
+<br>
+
+---
+
+⚠️ **WARNING:** It should be explained more about what it is and then reference should be made and then reference should be made to the hobby kit that we used. ⚠️
+
+---
+
+<br>
 
 Once the relevant articles were identified, we conducted a detailed analysis of the affiliation metadata. For this task, we implemented a fast and efficient parser designed for MEDLINE and PubMed Open Access data, which enabled us to extract key elements from the affiliation strings. This process allowed us to systematically retrieve multiple fields, including:
 
@@ -65,26 +96,18 @@ Once the relevant articles were identified, we conducted a detailed analysis of 
 - Email address
 - Zip code
 
-Additionally, we utilized an affiliation-matching function that cross-referenced the extracted affiliation data with the Global Research Identifier Database (GRID). This step improved the consistency and accuracy of the institutional affiliations, ensuring that the dataset was robust for further institutional and geographic analysis.
+Additionally, we utilized an affiliation-matching function that cross-referenced the extracted affiliation data with the Global Research Identifier Database (GRID) [1](https://www.grid.ac/). This step improved the consistency and accuracy of the institutional affiliations, ensuring that the dataset was robust for further institutional and geographic analysis.
 
-##### Topic Extraction
+## Topic Extraction
 
-For topic extraction, we applied the TextRank algorithm, a graph-based natural language processing (NLP) technique well-suited for unsupervised keyword and sentence extraction. TextRank operates by constructing a graph where the nodes represent words or sentences, and edges represent relationships between them based on co-occurrence. By identifying the most important nodes in this graph, TextRank effectively extracts key topics without the need for labeled training data. This algorithm was particularly beneficial for our dataset as it allowed us to extract relevant topics from articles spanning various languages and medical informatics domains, making the method adaptable and scalable across different contexts.
+For topic extraction, we applied the TextRank algorithm [1](https://aclanthology.org/W04-3252/), a graph-based natural language processing (NLP) technique well-suited for unsupervised keyword and sentence extraction. TextRank operates by constructing a graph where the nodes represent words or sentences, and edges represent relationships between them based on co-occurrence. By identifying the most important nodes in this graph, TextRank effectively extracts key topics without the need for labeled training data. This algorithm was particularly beneficial for our dataset as it allowed us to extract relevant topics from articles spanning various languages and medical informatics domains, making the method adaptable and scalable across different contexts.
 
-##### Data Output and Formatting
+## Data Output and Formatting
 
 The final dataset was prepared in multiple formats to maximize usability and accessibility for a broad range of users. The primary output was structured in JSON format, allowing for flexibility in data handling and compatibility with various applications. In addition, a CSV version of the dataset was generated to ensure ease of use for researchers and practitioners who may prefer more traditional tabular formats. This dual-format approach ensures that the dataset can be easily integrated into a variety of workflows, enhancing its utility for downstream analysis.
 
 
-
-#### Results & Discussion
-
-Using this approach we extracted ... papers leading to ... metadata, ... affiliations, and ... topics. As we delved deeper into the dataset analysis, we observed that while certain articles lacked a DOI on PubMed, they were associated with a DOI on the IOS Press website. However, a significant challenge lies in the absence of a systematic approach to access this metadata from IOS Press. For instance, consider PMID: 25160183.
-
-
-
-
-#### Value of the Data
+# Value of the Data
 
 The Medical Informatics Europe (MIE) Conference dataset presented in this article offers significant value to researchers, practitioners, and policymakers in the field of medical informatics. The following points highlight the key benefits and potential applications of this dataset:
 
@@ -138,12 +161,12 @@ The Medical Informatics Europe (MIE) Conference dataset presented in this articl
 This dataset represents a valuable resource for the medical informatics community and related fields. Its comprehensive nature, combining bibliometric data with advanced topic extraction and affiliation mining, provides a unique opportunity for multifaceted analyses. As the field of medical informatics continues to evolve rapidly, this dataset offers a solid foundation for understanding its historical development and current state, while also providing insights that can shape its future direction.
 
 
-#### Dataset Description
+# Dataset Description
 The dataset described in this article comprises a single JSON file containing detailed information about articles presented at the Medical Informatics Europe (MIE) Conference. This dataset was collected using the Triple-A tool and further enhanced through advanced techniques such as topic extraction and affiliation mining.
 
 
 
-##### File Structure
+## File Structure
 
 The JSON file contains a list of objects, where each object represents a single article and includes various fields of information. Below is an example of the structure for a single article entry:
 
@@ -208,7 +231,7 @@ The JSON file contains a list of objects, where each object represents a single 
 }
 ```
 
-##### Field Descriptions
+## Field Descriptions
 
 Each article entry in the dataset contains the following fields:
 
@@ -233,7 +256,7 @@ Each article entry in the dataset contains the following fields:
 | affiliation_integration_department | The departments associated with the authors' affiliations, if available |
 | affiliation_integration_institution | The institutions associated with the authors' affiliations |
 
-##### Data Processing and Enhancement
+## Data Processing and Enhancement
 
 This dataset has been enriched through several advanced techniques:
 
@@ -245,7 +268,81 @@ This dataset has been enriched through several advanced techniques:
 
 This comprehensive dataset offers a rich resource for researchers interested in the evolution of medical informatics, collaboration patterns, and trending topics in the field. The combination of bibliometric data, extracted topics, and standardized affiliation information provides multiple avenues for analysis and insights into the MIE conference contributions over time.
 
-#### Limitations
+
+# Results
+
+The analysis of the Medical Informatics Europe (MIE) Conference dataset, prepared using the Triple-A tool and enhanced with topic extraction and affiliation mining techniques, revealed several interesting patterns and characteristics.
+
+## Dataset Composition
+
+The dataset comprises a total of 3,459 articles from the MIE Conference proceedings. This substantial corpus provides a comprehensive view of the research trends and developments in medical informatics over the years covered by the dataset.
+
+## Digital Object Identifier (DOI) Assignment
+
+A notable trend in the dataset is the inconsistent assignment of Digital Object Identifiers (DOIs) across the years. As illustrated in Figure 1, only articles from the most recent three years consistently included DOIs in their metadata. This observation highlights the evolving practices in digital article identification and the gradual adoption of DOIs in the field of medical informatics.
+
+![Figure 1: "Articles with and without DOI by Year"](/output/Articles%20with%20and%20without%20DOI%20by%20Year.png)
+
+[Figure 1: "Articles with and without DOI by Year"]
+
+<br>
+
+---
+
+⚠️ **WARNING:** Using this approach we extracted ... papers leading to ... metadata, ... affiliations, and ... topics. As we delved deeper into the dataset analysis, we observed that while certain articles lacked a DOI on PubMed, they were associated with a DOI on the IOS Press website. However, a significant challenge lies in the absence of a systematic approach to access this metadata from IOS Press. For instance, consider PMID: 25160183. ⚠️
+
+---
+
+<br>
+
+## Citation Patterns
+
+The analysis of citation data, extracted from PubMed metadata, reveals varying levels of scholarly impact across the years. Figure 2 presents a year-wise breakdown of articles that have received at least one citation versus those that remain uncited.
+
+![Figure 2: "Articles with No Citations vs At Least One Citation by Year"](/output/Articles%20with%20No%20Citations%20vs%20At%20Least%20One%20Citation%20by%20Year.png)
+
+[Figure 2: "Articles with No Citations vs At Least One Citation by Year"]
+
+This visualization provides insights into the influence and reach of MIE Conference publications over time, potentially reflecting changes in research focus, quality, or dissemination strategies.
+
+## Authorship Anomalies
+
+An unexpected finding in the dataset pertains to authorship information. As shown in Figure 3, a number of articles across various years were found to have no authors attributed to them.
+
+![Figure 3: "Articles with No Authors vs At Least One Author by Year"](/output/Articles%20with%20No%20Authors%20vs%20At%20Least%20One%20Author%20by%20Year.png)
+
+[Figure 3: "Articles with No Authors vs At Least One Author by Year"]
+
+This anomaly appears to be related to the indexing practices of PubMed, particularly for conference proceedings. For instance, in 1996, the entire conference book was saved as a single information field in PubMed, leading to inconsistencies in individual article metadata. This observation underscores the challenges in standardizing bibliographic data for conference proceedings and highlights the need for careful data cleaning and validation in bibliometric studies.
+
+
+<br>
+
+---
+
+⚠️ **WARNING:** Bring some pictures and examples for it ⚠️
+
+---
+
+<br>
+
+## Language of Publications
+
+While English has been the primary language of the MIE Conference, our analysis revealed an interesting deviation in the year 2000. As depicted in Figure 4, a small number of articles were accepted in German during this year.
+
+![Figure 4: "English vs Non-English Articles by Year"](/output/English%20vs%20Non-English%20Articles%20by%20Year.png)
+
+[Figure 4: "English vs Non-English Articles by Year"]
+
+This finding provides an intriguing glimpse into the conference's language policies and potential efforts to accommodate non-English speaking researchers. It also raises questions about the impact of language diversity on the dissemination and accessibility of research in the field of medical informatics.
+
+In conclusion, these results offer valuable insights into the characteristics and evolution of the MIE Conference dataset. The observed patterns in DOI assignment, citation trends, authorship anomalies, and language diversity not only inform our understanding of the dataset itself but also reflect broader trends in medical informatics research and academic publishing practices over the years.
+
+
+
+
+
+# Limitations
 
 While the dataset presented in this article offers valuable insights into the Medical Informatics Europe (MIE) Conference proceedings, it is important to acknowledge several limitations that may impact its comprehensiveness and applicability:
 
@@ -286,7 +383,7 @@ While the dataset presented in this article offers valuable insights into the Me
 These limitations should be carefully considered when using this dataset for research or analysis purposes. While the dataset provides a valuable resource for studying trends and developments in medical informatics through the lens of MIE conferences, users should be aware of its scope and potential biases. Future work could focus on addressing these limitations by incorporating additional data sources, extending the temporal coverage, and refining the data processing techniques.
 
 
-#### Conclusion
+# Conclusion
 
 The Medical Informatics Europe (MIE) Conference dataset presented in this article represents a significant contribution to the field of medical informatics. By compiling and enhancing data from MIE conferences since 1994, this dataset offers a unique and comprehensive resource for researchers, educators, policymakers, and industry professionals.
 
@@ -318,12 +415,10 @@ Future work could focus on expanding the dataset to include more recent conferen
 
 In conclusion, this MIE conference dataset represents a significant contribution to the medical informatics community. It not only provides a window into the history and evolution of the field but also serves as a springboard for future research, collaboration, and innovation. As we continue to navigate the complex intersection of healthcare and technology, resources like this dataset will play a crucial role in shaping our understanding and guiding our progress.
 
-#### Ethics Statement
+# Ethics Statement
 The current work does not involve human subjects, animal experiments, or any data collected from social media platforms.
 
-#### Acknowledgments
 
-#### Data Availability
+# Data Availability
 
-
-
+The data is available in json format on the figshare platform with DOI 172609283 in this [link](https://figshare.com/).

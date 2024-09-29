@@ -4,11 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## v0.0.1 2024-09-21
 ### Task
-Install TripleA
-Check this field in dataset if need for delete: language, DOI
+
+Check this field in dataset if need for delete: journal_iso_abbreviation, publisher
 
 ### Improvements
+- Edit Article
+- Add output directory 
 - Add Docs directory
+
 
 ### Bug Fixes
 
