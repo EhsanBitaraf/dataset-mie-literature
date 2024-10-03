@@ -62,9 +62,9 @@ def fx_transform(article:Article):
     # General one to one info of article
     output['title'] = ainfo["title"]
     output['year'] = ainfo["year"]
-    output['publisher'] = ainfo["publisher"]
+    # output['publisher'] = ainfo["publisher"]
     output['journal_issn'] = ainfo["journal_issn"]
-    output['journal_iso_abbreviation'] = ainfo["journal_iso_abbreviation"]
+    # output['journal_iso_abbreviation'] = ainfo["journal_iso_abbreviation"]
     output['language'] = ainfo["language"]
     # output['url'] = ainfo["url"]
     # output['abstract'] = ainfo["abstract"]
@@ -131,9 +131,9 @@ def fx_transform(article:Article):
             list_topic.append(t['text'])
     output['topics'] = list_topic
 
-    output['affiliation_integration_country'] = ainfo['affiliation_integration_country']
-    output['affiliation_integration_department'] = ainfo['affiliation_integration_department'] 
-    output['affiliation_integration_institution'] = ainfo['affiliation_integration_institution'] 
+    output['affiliation_countries'] = ainfo['affiliation_countries']
+    output['affiliations'] = ainfo['affiliations'] 
+
 
     return output
 
@@ -156,9 +156,9 @@ def export_repo(output_filename):
     with open(DATA_DIR / output_filename, 'w') as fp:
         json.dump(ol, fp)
 
-    # General Model
-    c = Converter()
-    c.convert_unified2csv_dynamically(ol)
+    # # General Model
+    # c = Converter()
+    # c.convert_unified2csv_dynamically(ol)
 
 if __name__ == "__main__":
     export_repo("dataset-ios.json")
