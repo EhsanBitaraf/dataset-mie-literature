@@ -2,7 +2,7 @@ import os
 from triplea.config.settings import ENV_PATH_FILE
 from triplea.config.settings import SETTINGS
 from triplea.service.click_logger import logger
-
+import triplea.service.repository.persist as PERSIST
 
 if __name__ == "__main__":
     logger.INFO(f"TripleA Version : {SETTINGS.VERSION}")
@@ -26,3 +26,6 @@ if __name__ == "__main__":
         logger.INFO("   File is exist.")
     else:
         logger.WARNING("   File is not exist.")
+
+    # Step 3 - Get info
+    PERSIST.print_article_info_from_repo()

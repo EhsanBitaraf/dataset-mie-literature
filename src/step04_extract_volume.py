@@ -24,7 +24,8 @@ def remove(
         logger.INFO("Start remove...")
 
 
-    vl = [302,
+    vl = [316,
+            302,
             294,
             281,
             270,
