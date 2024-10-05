@@ -1,16 +1,15 @@
 # Dataset MIE Literature
-![Repo Size](https://img.shields.io/github/repo-size/mjafarpour87/medical-insights)
+![Repo Size](https://img.shields.io/github/repo-size/EhsanBitaraf/dataset-mie-literature)
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mjafarpour87/medical-insights)
-
-<!-- ![Downloads](https://img.shields.io/github/downloads/mjafarpour87/medical-insights/total) -->
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EhsanBitaraf/dataset-mie-literature)
 
 
 This dataset represents a valuable resource for the medical informatics community and related fields. Its comprehensive nature, combining bibliometric data with advanced topic extraction and affiliation mining, provides a unique opportunity for multifaceted analyses. As the field of medical informatics continues to evolve rapidly, this dataset offers a solid foundation for understanding its historical development and current state, while also providing insights that can shape its future direction.
 
 
-Dataset:
+*Dataset:*  
 [![DOI:10.6084/m9.figshare.27174759](https://zenodo.org/badge/doi/10.6084/m9.figshare.27174759.svg)](https://doi.org/10.6084/m9.figshare.27174759)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 This dataset contains 4606 articles from 1996 to 2024 that were presented in MIE (Medical Informatics Europe Conference) conferences. This data was extracted from PubMed and topic extraction and affiliation parsing were done on it.
 
@@ -54,13 +53,13 @@ pip install git+https://github.com/EhsanBitaraf/triple-a.git
 ```
 
 ### Run steps
-|#     |File Name            |Description|
+|# Step    |File Name            |Description|
 |-|-|-|
-|Step 1|step01_check_config.py|Check TripleA Configuration|
-|step 2|step02_get_pubmed.py|To retrieve relevant papers with minimum quality content, we used the search strategy keywords: `"Stud Health Technol Inform"[jour]`.|
-|Step 3|step03_run_pipline.py|In this step, "Triple A" operators were used to process paper metadata and content at different states, including extracting keywords and MeSH terms from the metadata. Extract topic from abstract and title with method textrank and affiliation mining|
-|Step 4|step04_extract_volume.py|To isolate MIE conference proceedings from other publications in the journal series, this step filters the collected data based on volume numbers associated with MIE conferences. This selective approach ensures the dataset's focus and relevance. You can find information about the volume of the MIE conference [here](/docs/IOSPressArticles.v.0.2.xlsx).|
-|Step 5|step05_create_dataset.py|Export Dataset|
+| 1|step01_check_config.py|Check TripleA Configuration|
+| 2|step02_get_pubmed.py|To retrieve relevant papers with minimum quality content, we used the search strategy keywords: `"Stud Health Technol Inform"[jour]`.|
+| 3|step03_run_pipline.py|In this step, "Triple A" operators were used to process paper metadata and content at different states, including extracting keywords and MeSH terms from the metadata. Extract topic from abstract and title with method textrank and affiliation mining|
+| 4|step04_extract_volume.py|To isolate MIE conference proceedings from other publications in the journal series, this step filters the collected data based on volume numbers associated with MIE conferences. This selective approach ensures the dataset's focus and relevance. You can find information about the volume of the MIE conference [here](/docs/IOSPressArticles.v.0.2.xlsx).|
+| 5|step05_create_dataset.py|Export Dataset|
 
 
 # Result
@@ -178,7 +177,7 @@ Biblatex entry:
 
 # Contributors
 
-[![01 project contributors](https://contrib.rocks/image?repo=mjafarpour87/medical-insights)](https://github.com/mjafarpour87/medical-insights/graphs/contributors)
+[![01 project contributors](https://contrib.rocks/image?repo=EhsanBitaraf/dataset-mie-literature)](https://github.com/EhsanBitaraf/dataset-mie-literature/graphs/contributors)
 
 Made with [contrib.rocks](https://contrib.rocks).
 
