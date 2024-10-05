@@ -3,9 +3,6 @@ All notable changes to this project will be documented in this file.
 
 
 ## v0.0.1 2024-09-21
-### Task
-
-I thibk add abstract field
 
 ### Improvements
 - Add Articles with at least one incomplete affiliation parsing

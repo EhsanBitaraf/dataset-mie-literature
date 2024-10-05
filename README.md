@@ -1,23 +1,4 @@
 # Dataset MIE Literature
-
-Export from \notingithub\bibliometric-ios-press-ebook
-
-
-under construction
-
-
-<br>
-
----
-
-⚠️ **WARNING:** This experimental project is under rapid development and lacks basic safeguards. Until a stable `1.0` release, **ONLY** run this repository on devices without sensitive information or access to paid services. ⚠️
-
----
-
-<br>
-**Update Field Descriptions & json. Data Availability, Article, Contributors**
-
-
 ![Repo Size](https://img.shields.io/github/repo-size/mjafarpour87/medical-insights)
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mjafarpour87/medical-insights)
@@ -28,8 +9,13 @@ under construction
 This dataset represents a valuable resource for the medical informatics community and related fields. Its comprehensive nature, combining bibliometric data with advanced topic extraction and affiliation mining, provides a unique opportunity for multifaceted analyses. As the field of medical informatics continues to evolve rapidly, this dataset offers a solid foundation for understanding its historical development and current state, while also providing insights that can shape its future direction.
 
 
+Dataset:
+[![DOI:10.6084/m9.figshare.27174759](https://zenodo.org/badge/doi/10.6084/m9.figshare.27174759.svg)](https://doi.org/10.6084/m9.figshare.27174759)
+
+This dataset contains 4606 articles from 1996 to 2024 that were presented in MIE (Medical Informatics Europe Conference) conferences. This data was extracted from PubMed and topic extraction and affiliation parsing were done on it.
+
 # How to use
-You can use the dataset generated through this [link](). In addition, you can use it using the following code in the Python environment
+You can use the dataset generated through this [link](https://doi.org/10.6084/m9.figshare.27174759). In addition, you can use it using the following code in the Python environment
 ```python
 def load_dataset_mie():
     ds_path = DATA_DIR / "dataset-ios.json"
@@ -89,7 +75,7 @@ Each article entry in the dataset contains the following fields:
 |-------|-------------|
 | title | The full title of the article |
 | year | The publication year of the article |
-| publisher | The name of the publisher or journal |
+| abstract | The abstract of the article |
 | journal_issn | The International Standard Serial Number (ISSN) of the journal |
 | language | The language of the article (e.g., "eng" for English) |
 | doi | The Digital Object Identifier of the article, if available |
@@ -164,20 +150,31 @@ The JSON file contains a list of objects, where each object represents a single 
 
 ![Figure 1: "Articles with and without DOI by Year"](/output/Articles%20with%20and%20without%20DOI%20by%20Year.png)
 
-[Figure 1: "Articles with and without DOI by Year"]
+Figure : "Articles with and without DOI by Year"
 
 ![Figure 3: "Articles with No Authors vs At Least One Author by Year"](/output/Articles%20with%20No%20Authors%20vs%20At%20Least%20One%20Author%20by%20Year.png)
 
-[Figure 3: "Articles with No Authors vs At Least One Author by Year"]
+Figure : "Articles with No Authors vs At Least One Author by Year"
 
 ![Figure 4: "English vs Non-English Articles by Year"](/output/English%20vs%20Non-English%20Articles%20by%20Year.png)
 
-[Figure 4: "English vs Non-English Articles by Year"]
+Figure : "English vs Non-English Articles by Year"
 
 # Data Availability
+[![DOI:10.6084/m9.figshare.27174759](https://zenodo.org/badge/doi/10.6084/m9.figshare.27174759.svg)](https://doi.org/10.6084/m9.figshare.27174759)
 
-# Article
 
+The MIE Dataset is available [here](https://doi.org/10.6084/m9.figshare.27174759) under a CC BY 4.0 license.
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+
+## Citing
+If you use the MIE dataset in a scientific publication, we would appreciate references to the following paper:
+
+Biblatex entry:
+```latex
+
+```
 
 # Contributors
 
@@ -191,4 +188,4 @@ Please see our [contributing guidelines](CONTRIBUTING.md) for more details on ho
 
 # License
 
-THis Repository is available under the [CC0 1.0 Universal](LICENSE).
+This Repository is available under the [CC0 1.0 Universal](LICENSE).
