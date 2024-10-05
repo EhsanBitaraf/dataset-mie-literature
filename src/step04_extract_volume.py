@@ -6,9 +6,8 @@ from triplea.utils.general import print_error
 from triplea.service.click_logger import logger
 from triplea.config.settings import SETTINGS
 
-def remove(
-                  limit_sample=0,
-                  proccess_bar=True):
+def remove(limit_sample=0,
+           proccess_bar=True):
     
     l_id = PERSIST.get_all_article_id_list()
     SETTINGS.AAA_CLI_ALERT_POINT
@@ -23,7 +22,7 @@ def remove(
     else:
         logger.INFO("Start remove...")
 
-
+    # MIE Volume
     vl = [316,
             302,
             294,
@@ -105,13 +104,8 @@ def remove(
                     except Exception:
                         print_error()
 
-                    
-
-
-            
+ 
             ### Check Volume
-
-
 
             # For View Proccess
             if proccess_bar:

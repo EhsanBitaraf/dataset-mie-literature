@@ -18,13 +18,4 @@ I thibk add abstract field
 
 ### Bug Fixes
 
-## v0.0.1 2024-08-14
 
-
-
-### Improvements
-- Add `step04_extract_volume`
-
-
-### Bug Fixes
-- Fix Publication Type in Export dataset

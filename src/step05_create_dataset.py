@@ -1,57 +1,16 @@
 import json
-import click
 from triplea.schemas.article import Article
 from triplea.service.repository.export.engine import export_engine
-from triplea.service.repository.export.unified_export_json import json_converter_01,json_converter_02
-from triplea.service.repository.export.unified_export_json.convert import Converter
-# from triplea.utils.general import safe_csv
+from triplea.service.repository.export.unified_export_json import json_converter_02
+
+
 
 from config import DATA_FILE, DATA_DIR
 
 
 def fx_filter(article:Article):
     return True
-    for i in article.ReviewLLM:
-        if i['TemplateID'] == "datamodel":
-            if isinstance(i['Response'],dict):
-                if 'IsDataModelDesign' in i['Response']:
-                    if i['Response']['IsDataModelDesign'] is True:
-                        return True
-                else:
-                    return False
-            else:
-                pass
-                
-    # Finally
-    return False
 
-def harmonization_string_field(f):
-    if isinstance(f,str):
-        output = []
-        if f.__contains__(','):
-            list_f = f.split(',')
-            for i in list_f:
-                output.append(safe_csv(i.strip()))
-        elif f.__contains__(' or '):
-            list_f = f.split(' or ')
-            for i in list_f:
-                output.append(safe_csv(i.strip()))
-        elif f.__contains__(' and '):
-            list_f = f.split(' and ')
-            for i in list_f:
-                output.append(safe_csv(i.strip()))
-        else:        
-            output = [safe_csv(f)]
-    elif isinstance(f,list):
-        output = f
-    elif f is None:
-        output = None
-    else:
-        # print()
-        # print(f"in harmonization_string_field - {f} with type {type(f)} is unhandel.")
-        output = ['Can not parse.']
-
-    return output
 
 def fx_transform(article:Article):
     # convert article info into unified format
@@ -62,15 +21,11 @@ def fx_transform(article:Article):
     # General one to one info of article
     output['title'] = ainfo["title"]
     output['year'] = ainfo["year"]
-    # output['publisher'] = ainfo["publisher"]
     output['journal_issn'] = ainfo["journal_issn"]
-    # output['journal_iso_abbreviation'] = ainfo["journal_iso_abbreviation"]
     output['language'] = ainfo["language"]
-    # output['url'] = ainfo["url"]
-    # output['abstract'] = ainfo["abstract"]
+    output['abstract'] = ainfo["abstract"]
     output['doi'] = ainfo["doi"]
     output['pmid'] = ainfo["pmid"]
-    # output['state'] = ainfo["state"]
     output['citation_count'] = ainfo["citation_count"]
 
 
@@ -161,6 +116,6 @@ def export_repo(output_filename):
     # c.convert_unified2csv_dynamically(ol)
 
 if __name__ == "__main__":
-    export_repo("dataset-ios.json")
+    export_repo("dataset-mie.json")
 
 
