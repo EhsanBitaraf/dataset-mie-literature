@@ -137,7 +137,7 @@ Each entry in the dataset represents an individual article and contains various 
 | `authors`              | A list of authors’ names who contributed to the article.                                              |
 | `keywords`             | A list of keywords associated with the article, typically retrieved from PubMed metadata.             |
 | `topics`               | The top 10 topics extracted from the article’s title and abstract using an unsupervised topic extraction method. |
-| `affiliation_countries`| A list of countries associated with the affiliations of the authors, derived using the [specific algorithm]().|
+| `affiliation_countries`| A list of countries associated with the affiliations of the authors, derived using the [specific algorithm](https://github.com/titipata/affiliation_parser).|
 | `affiliations`         | The PubMed affiliations of the article’s authors.                                              |
 
 The dataset is stored in a JSON format, where each article is represented as a JSON object containing these fields. This structure allows for efficient storage, retrieval, and processing of the data. Below is an example of the structure for a single article entry:
