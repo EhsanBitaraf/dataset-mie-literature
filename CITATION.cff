@@ -1,0 +1,68 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: MIE Conference
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Ehsan
+    family-names: Bitaraf
+    affiliation: >-
+      Rajaei Cardiovascular Reserach Institute Iran
+      University of Medical Sciences Tehran, Iran 
+    orcid: 'https://orcid.org/0000-0002-6588-7349'
+  - given-names: Maryam
+    family-names: Jafarpour
+    affiliation: >-
+      Center for Medical Data Science Medical University of
+      Vienna Vienna, Austria
+    orcid: 'https://orcid.org/0000-0001-7266-5018'
+identifiers:
+  - type: doi
+    value: 10.48550/arXiv.2410.04602
+    description: arXiv Paper
+  - type: doi
+    value: 10.6084/m9.figshare.27174759
+    description: Dataset
+repository-code: 'https://github.com/EhsanBitaraf/dataset-mie-literature'
+repository-artifact: 'https://doi.org/10.6084/m9.figshare.27174759'
+abstract: >-
+  The rapid expansion of medical informatics literature
+  presents significant challenges in synthesizing and
+  analyzing research trends. This study introduces a novel
+  dataset derived from the Medical Informatics Europe (MIE)
+  Conference proceedings, addressing the need for
+  sophisticated analytical tools in the field. Utilizing the
+  Triple-A software, we extracted and processed metadata and
+  abstract from 4,606 articles published in the "Studies in
+  Health Technology and Informatics" journal series,
+  focusing on MIE conferences from 1996 onwards. Our
+  methodology incorporated advanced techniques such as
+  affiliation parsing using the TextRank algorithm. The
+  resulting dataset, available in JSON format, offers a
+  comprehensive view of bibliometric details, extracted
+  topics, and standardized affiliation information. Analysis
+  of this data revealed interesting patterns in Digital
+  Object Identifier usage, citation trends, and authorship
+  attribution across the years. Notably, we observed
+  inconsistencies in author data and a brief period of
+  linguistic diversity in publications. This dataset
+  represents a significant contribution to the medical
+  informatics community, enabling longitudinal studies of
+  research trends, collaboration network analyses, and
+  in-depth bibliometric investigations. By providing this
+  enriched, structured resource spanning nearly three
+  decades of conference proceedings, we aim to facilitate
+  novel insights and advancements in the rapidly evolving
+  field of medical informatics. 
+keywords:
+  - Medical informatics
+  - dataset
+  - Topic Extraction
+  - Affiliation Parsing
+  - Bibliometric Analysis
+  - MIE Conference
+license: CC-BY-4.0

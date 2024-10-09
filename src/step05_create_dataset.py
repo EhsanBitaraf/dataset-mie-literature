@@ -2,13 +2,19 @@ import json
 from triplea.schemas.article import Article
 from triplea.service.repository.export.engine import export_engine
 from triplea.service.repository.export.unified_export_json import json_converter_02
-
-
-
-from config import DATA_FILE, DATA_DIR
+from config import DATA_DIR,DATA_FILE_NAME
 
 
 def fx_filter(article:Article):
+    """
+    The function `fx_filter` takes an `Article` object as input and always returns
+    `True`.
+    
+    :param article: The `fx_filter` function takes an `Article` object as a
+    parameter
+    :type article: Article
+    :return: The function `fx_filter` is returning `True`.
+    """
     return True
 
 
@@ -28,8 +34,9 @@ def fx_transform(article:Article):
     output['pmid'] = ainfo["pmid"]
     output['citation_count'] = ainfo["citation_count"]
 
-
     # For IOS Volume
+    # The code  is extracting the volume information from the
+    # `article` object. Here's a breakdown of what the code is doing:
     volume = ""
     if 'PubmedArticleSet' in article.OreginalArticle:
         d = article.OreginalArticle['PubmedArticleSet']
@@ -101,6 +108,32 @@ def fx_output(output):
     
 
 def export_repo(output_filename):
+    """
+    The `export_repo` function selects and transforms articles using specified
+    functions and exports the result to a JSON file.
+    
+    :param output_filename: The `output_filename` parameter is a string that
+    represents the name of the file where the data will be exported. This parameter
+    should be provided as an argument when calling the `export_repo` function to
+    specify the name of the output file
+    """
+
+    # The `export_engine` function is being called with the following parameters:
+    # - `fx_filter`: This is a function that filters articles based on certain
+    # criteria. In this case, it seems to be a function that always returns `True`,
+    # meaning all articles will pass the filter.
+    # - `fx_transform`: This is a function that transforms the selected articles into
+    # a specific format. It takes an `Article` object as input and converts it into a
+    # dictionary format.
+    # - `fx_output`: This function is responsible for handling the output after
+    # transformation. If the output is not an empty string, it will return the
+    # output; otherwise, it will return an empty string.
+    # - `limit_sample=0`: This parameter specifies the limit on the number of
+    # articles to process. Here, it is set to `0`, indicating that there is no limit
+    # on the number of articles to process.
+    # - `proccess_bar=False`: This parameter controls whether a progress bar is
+    # displayed during the export process. Here, it is set to `False`, meaning no
+    # progress bar will be shown.
     ol = export_engine(fx_filter,fx_transform,fx_output,
                        limit_sample=0,
                        proccess_bar=False)
@@ -111,11 +144,8 @@ def export_repo(output_filename):
     with open(DATA_DIR / output_filename, 'w') as fp:
         json.dump(ol, fp)
 
-    # # General Model
-    # c = Converter()
-    # c.convert_unified2csv_dynamically(ol)
 
 if __name__ == "__main__":
-    export_repo("dataset-mie.json")
+    export_repo(DATA_FILE_NAME)
 
 

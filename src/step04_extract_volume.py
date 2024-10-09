@@ -8,7 +8,24 @@ from triplea.config.settings import SETTINGS
 
 def remove(limit_sample=0,
            proccess_bar=True):
+    """
+    The function `remove` iterates through a list of article IDs, checks for a
+    specific volume in each article's metadata, and deletes articles that do not
+    match the specified volume criteria.
     
+    :param limit_sample: The `limit_sample` parameter in the `remove` function is
+    used to specify the maximum number of articles to process before stopping. If
+    `limit_sample` is set to a non-zero value, the function will stop processing
+    articles once it has checked and potentially deleted the specified number of
+    articles. If `, defaults to 0 (optional)
+    :param proccess_bar: The `proccess_bar` parameter in the `remove` function is a
+    boolean flag that determines whether a progress bar should be displayed during
+    the removal process. If `proccess_bar` is set to `True`, a progress bar will be
+    shown to indicate the progress of the removal operation. If it, defaults to
+    True (optional)
+    :return: The `remove` function returns nothing. If the number of documents is
+    0, the function will return early without performing any further actions.
+    """
     l_id = PERSIST.get_all_article_id_list()
     SETTINGS.AAA_CLI_ALERT_POINT
     n = 0
@@ -71,9 +88,6 @@ def remove(limit_sample=0,
                                     if 'Volume' in d:
                                         volume = d['Volume']
 
-
-
-
             if volume == "":
                 print (f"""Tag Volume is not exist in metadata.
                         PMID {article.PMID}""")
@@ -103,8 +117,6 @@ def remove(limit_sample=0,
                         delete_number = delete_number + 1
                     except Exception:
                         print_error()
-
- 
             ### Check Volume
 
             # For View Proccess

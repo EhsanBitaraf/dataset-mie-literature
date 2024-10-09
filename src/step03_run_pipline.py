@@ -1,7 +1,11 @@
 from triplea.service.repository.pipeline_core import move_state_forward
 import triplea.service.repository.pipeline_flag as cPIPELINE
 import triplea.service.repository.persist as PERSIST
+
+
 if __name__ == "__main__":
+# This Python script is executing a series of steps in a pipeline for processing
+# articles. Here's a breakdown of what each step is doing:
 
     # Moving from `0` to `1`  - original details of article saved (json Form)
     move_state_forward(0)                    
@@ -21,3 +25,6 @@ if __name__ == "__main__":
     cPIPELINE.go_affiliation_mining(method="TitipataIntegrated")
 
     PERSIST.refresh()
+
+    # Get info
+    PERSIST.print_article_info_from_repo()

@@ -4,6 +4,8 @@ from triplea.config.settings import SETTINGS
 from triplea.service.click_logger import logger
 import triplea.service.repository.persist as PERSIST
 
+# This Python script is checking various configurations and files related to a
+# TripleA application.
 if __name__ == "__main__":
     logger.INFO(f"TripleA Version : {SETTINGS.VERSION}")
     if os.path.isfile(ENV_PATH_FILE):
@@ -27,5 +29,3 @@ if __name__ == "__main__":
     else:
         logger.WARNING("   File is not exist.")
 
-    # Step 3 - Get info
-    PERSIST.print_article_info_from_repo()
